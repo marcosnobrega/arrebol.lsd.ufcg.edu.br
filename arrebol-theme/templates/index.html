@@ -1,0 +1,94 @@
+{% extends "base.html" %} {% set active_page = "index" %}
+{% block extrahead %}
+  <style>
+    .navbar {
+      opacity: 0.8;
+    }
+    body {
+      margin-top: 0px;
+    }
+    .jumbotron {
+      padding-top: 96px;
+      padding-bottom: 24px;
+    }
+    .cloudy-background {
+      background: url('{{ SITEURL }}/theme/img/bg/fogbow-bg-low-opacity.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .navbar-brand {
+      visibility: hidden;
+    }
+    .btn-sm {
+      font-size: 14px;
+    }
+  </style>
+{% endblock %}
+{% block jumbo %}
+  <div class="jumbotron cloudy-background">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <p><img src="{{ SITEURL }}/theme/img/logos/arrebol-logo.svg" style="width: 250px; height: 250px;"></p>
+        </div>
+        <div class="col-lg-7" style="height: 250px; display: flex; align-items: center;">
+          <h2 style="">application to execute bag of tasks applications usign Fogbow</h2>
+        </div>
+      </div>
+    </div>   
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-lg-3">
+    <div class="bs-component">
+      <div class="well well-lg">
+        <center>
+        <img src="{{ SITEURL }}/theme/img/logos/federation-stars-bw.png" style="width: 75px; height: 75px;">
+        <h2>Federation</h2>
+        <p>Aggregate resources from multiple and heterogeneous infrastructure-as-a-service clouds.</p>
+        <a target="_blank" href="https://github.com/fogbow/fogbow-rendezvous" class="btn btn-primary btn-sm">federation@github</a>
+        </center>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="bs-component">
+      <div class="well well-lg">
+        <center>
+        <i class="fa fa-5x fa-desktop" style="color:#222222"></i>
+        <h2>Opportunism</h2>
+        <p>Deploy an infrastructure-as-a-service private cloud on top of shared commodity personal computers in an opportunistic fashion.</p>
+        <a target="_blank" href="https://github.com/fogbow/fogbow-opportunism" class="btn btn-primary btn-sm">opportunism@github</a>
+        </center>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="bs-component">
+      <div class="well well-lg">
+        <center>
+        <i class="fa fa-5x fa-leaf" style="color:#222222"></i>
+        <h2>Greenness</h2>
+        <p>Save energy by consolidating applications in active hosts and by shutting down the idle ones.</p>
+        <a target="_blank" href="https://github.com/fogbow/fogbow-green-sitter" class="btn btn-primary btn-sm">greeness@github</a>
+        </center>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="bs-component">
+      <div class="well well-lg">
+        <center>
+        <i class="fa fa-5x fa-exchange" style="color:#222222"></i>
+        <h2>Barter of Wares</h2>
+        <p>Offer idle resources to other federation members when local demand is low, to get extra resources from these members later, when local demand is higher than you can handle.</p>
+        <a target="_blank" href="https://github.com/fogbow/fogbow-manager" class="btn btn-primary btn-sm">barter@github</a>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
