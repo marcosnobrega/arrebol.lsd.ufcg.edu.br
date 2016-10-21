@@ -33,7 +33,7 @@
           <p><img src="{{ SITEURL }}/theme/img/logos/arrebol-logo.svg" style="width: 250px; height: 250px;"></p>
         </div>
         <div class="col-lg-7" style="height: 250px; display: flex; align-items: center;">
-          <h2 style=""><font color="black"> Application to execute bag of tasks applications usign Fogbow</font></h2>
+          <h2 style=""><font color="black"> application to execute bag of tasks applications usign Fogbow</font></h2>
         </div>
       </div>
     </div>   
