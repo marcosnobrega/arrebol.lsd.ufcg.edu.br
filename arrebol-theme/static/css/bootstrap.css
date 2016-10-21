@@ -6169,7 +6169,7 @@ footer {
   background: -moz-linear-gradient(left, #e3a94b 0%, #cc5b4f 100%);
   background: -webkit-linear-gradient(left, #e3a94b 0%,#cc5b4f 100%);
   background: linear-gradient(to right, #e3a94b 0%,#cc5b4f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3a94b', endColorstr='#cc5b4f',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#cc5b4f',GradientType=1 );
 
   a {
     &:link,
